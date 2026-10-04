@@ -1,0 +1,612 @@
+<title>Sungreet Strand 3D</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@700&family=Alegreya+Sans:wght@400;500;700&display=swap">
+<style>
+  :root{
+    --sky:#bcd3e3; --sky-low:#e9eef0; --ink:#17222a; --muted:#4e5d66; --panel:rgba(248,250,250,.88);
+    --line:rgba(23,34,42,.14); --accent:#8a590d; --chip-ink:#17222a; --label-bg:rgba(23,30,36,.78); --label-ink:#f4efe4;
+    --sun:#fff4e0; --sun-power:2.2; --hemi-sky:#dfe9f2; --hemi-ground:#5a4a36; --hemi-power:1.25;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --sky:#0e1721; --sky-low:#1b2834; --ink:#e8e3d6; --muted:#a6afb3; --panel:rgba(13,20,27,.86);
+      --line:rgba(232,227,214,.14); --accent:#e2a745; --chip-ink:#e8e3d6; --label-bg:rgba(9,13,18,.8); --label-ink:#f1e7cf;
+      --sun:#a9bfdc; --sun-power:1.25; --hemi-sky:#45597a; --hemi-ground:#1d1a17; --hemi-power:1.05;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --sky:#0e1721; --sky-low:#1b2834; --ink:#e8e3d6; --muted:#a6afb3; --panel:rgba(13,20,27,.86);
+    --line:rgba(232,227,214,.14); --accent:#e2a745; --chip-ink:#e8e3d6; --label-bg:rgba(9,13,18,.8); --label-ink:#f1e7cf;
+    --sun:#a9bfdc; --sun-power:1.25; --hemi-sky:#45597a; --hemi-ground:#1d1a17; --hemi-power:1.05;
+    color-scheme: dark;
+  }
+  html,body{height:100%;}
+  body{margin:0; overflow:hidden; background:var(--sky); color:var(--ink); font:14px/1.45 "Alegreya Sans", system-ui, -apple-system, "Segoe UI", sans-serif;}
+  #view{position:fixed; inset:0;}
+  #view canvas{display:block; touch-action:none;}
+  .hud{position:fixed; left:16px; top:calc(12px + env(safe-area-inset-top, 0px)); width:min(340px, calc(100vw - 32px));
+    background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:12px 14px 13px; backdrop-filter:blur(8px);
+    box-shadow:0 10px 30px -18px rgba(0,0,0,.45);}
+  .hud h1{font:700 22px/1.05 "Alegreya SC", Georgia, serif; margin:0; letter-spacing:.01em; text-wrap:balance;}
+  .hud-head{display:flex; align-items:center; justify-content:space-between; gap:10px;}
+  #hudtoggle{width:34px; height:34px; padding:0; border-radius:50%; font-size:16px; line-height:1; flex:none;}
+  #hudtoggle span{display:inline-block; transition:transform .15s;}
+  .hud.collapsed{width:auto; padding:6px 8px 6px 14px;}
+  .hud.collapsed #hudbody{display:none;}
+  .hud.collapsed #hudtoggle span{transform:rotate(180deg);}
+  .hud .sub{margin:3px 0 0; color:var(--muted); font-size:13px;}
+  .facts{display:flex; flex-wrap:wrap; gap:4px 12px; margin:8px 0 0; color:var(--muted); font-size:12.5px; font-variant-numeric:tabular-nums;}
+  .facts b{color:var(--ink); font-weight:700;}
+  .row{display:flex; flex-wrap:wrap; gap:6px; margin-top:10px;}
+  button{font:600 13px "Alegreya Sans", system-ui, sans-serif; color:var(--ink); background:transparent; border:1px solid var(--line);
+    border-radius:999px; padding:5px 12px; cursor:pointer;}
+  button:hover{border-color:var(--accent);}
+  button[aria-pressed="true"]{background:var(--accent); border-color:var(--accent); color:#fff;}
+  button:focus-visible{outline:2px solid var(--accent); outline-offset:2px;}
+  details{margin-top:10px;}
+  summary{cursor:pointer; font-weight:700; font-size:13px;}
+  .help{margin:6px 0 0; padding-left:16px; color:var(--muted); font-size:13px;}
+  .help b{color:var(--ink);}
+  .legend{display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:4px 10px; margin-top:6px; font-size:12.5px; color:var(--chip-ink);}
+  .legend span{display:flex; align-items:center; gap:6px;}
+  .legend i{width:12px; height:12px; border-radius:3px; flex:none; border:1px solid var(--line);}
+  .note{margin:10px 0 0; color:var(--muted); font-size:12px;}
+  .label{font:600 12.5px "Alegreya Sans", system-ui, sans-serif; letter-spacing:.02em; padding:3px 9px; border-radius:999px;
+    background:var(--label-bg); color:var(--label-ink); white-space:nowrap; pointer-events:none; transform:translateY(-8px);}
+  .pin{display:flex; align-items:center; gap:5px; pointer-events:auto; cursor:pointer; transform:translateY(-6px);
+    font:600 12px "Alegreya Sans", system-ui, sans-serif; color:var(--label-ink); white-space:nowrap;}
+  .pin i{width:10px; height:10px; border-radius:50%; border:2px solid rgba(0,0,0,.55); flex:none; background:var(--c);}
+  .pin span{background:var(--label-bg); padding:2px 7px; border-radius:999px;}
+  .pin.far span{display:none;}
+  .pin.maybe i{background:transparent; border:2.5px dashed var(--c); box-shadow:0 0 0 1.5px rgba(0,0,0,.6);}
+  .pin.maybe span{font-style:italic;}
+  .pin:hover span{display:inline;}
+  .layers{display:flex; flex-wrap:wrap; gap:6px; margin-top:8px;}
+  .layers button{display:inline-flex; align-items:center; gap:6px;}
+  .layers button i{width:9px; height:9px; border-radius:50%; background:var(--c); border:1px solid rgba(0,0,0,.4);}
+  .find{margin-top:10px; display:flex; gap:6px;}
+  .slice{display:flex; align-items:center; gap:8px; margin-top:10px; font-size:13px; color:var(--muted);}
+  .slice input{flex:1; accent-color:var(--accent);}
+  .find input{flex:1; min-width:0; font:14px "Alegreya Sans", system-ui, sans-serif; color:var(--ink); background:transparent;
+    border:1px solid var(--line); border-radius:999px; padding:5px 12px;}
+  .find input:focus-visible{outline:2px solid var(--accent); outline-offset:1px;}
+  #load{position:fixed; inset:0; display:grid; place-items:center; pointer-events:none;}
+  #load[hidden]{display:none;}
+  #load div{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:14px 18px; font-variant-numeric:tabular-nums;}
+  #walkhint{position:fixed; left:50%; bottom:calc(16px + env(safe-area-inset-bottom, 0px)); transform:translateX(-50%); background:var(--panel);
+    border:1px solid var(--line); border-radius:999px; padding:6px 14px; font-size:13px; max-width:calc(100vw - 32px); text-align:center;}
+  #cross{position:fixed; left:50%; top:50%; width:10px; height:10px; margin:-5px 0 0 -5px; border:2px solid var(--label-ink);
+    border-radius:50%; mix-blend-mode:difference; pointer-events:none;}
+  @media (max-width:560px){ .hud{padding:10px 12px;} .hud h1{font-size:19px;} .legend{grid-template-columns:repeat(2,minmax(0,1fr));} }
+  @media (prefers-reduced-motion: reduce){ * {scroll-behavior:auto;} }
+</style>
+
+<div id="view" aria-label="3D map of Night Harbor"></div>
+<div id="load"><div id="loadtext">Loading the map…</div></div>
+<div id="cross" hidden></div>
+<div id="walkhint" hidden>Walking: <b>W A S D</b> move · mouse looks · <b>Space</b>/<b>C</b> up/down · <b>Shift</b> faster · <b>Esc</b> stops</div>
+
+<section class="hud" id="hud" aria-label="Map controls">
+  <div class="hud-head"><h1>Night Harbor</h1>
+    <button type="button" id="hudtoggle" aria-expanded="true" aria-controls="hudbody" title="Hide the options"><span>▲</span></button></div>
+  <div id="hudbody">
+  <p class="sub">The whole place in 3D. Tap a pin to fly there.</p>
+  <p class="facts" id="facts"><span>Loading…</span></p>
+  <div class="row">
+    <button type="button" id="walk" aria-pressed="false">Walk</button>
+    <button type="button" id="top">Top view</button>
+    <button type="button" id="tilt">Tilted view</button>
+    <button type="button" id="labels" aria-pressed="true">Districts</button>
+    <button type="button" id="figs" aria-pressed="true">Figures</button>
+    <button type="button" id="inside" aria-pressed="false" title="Hide the outside of caves and walls facing away from you, so you can look in">See inside</button>
+  </div>
+  <label class="slice">Slice off the top <input type="range" id="cut" min="0" max="1000" value="1000" aria-label="Slice off the top of the map to see inside"></label>
+  <div class="layers" id="layers" aria-label="Pins"></div>
+  <div class="find"><input id="find" list="pinnames" placeholder="Find a place…" aria-label="Find a place on the map" autocomplete="off">
+    <datalist id="pinnames"></datalist></div>
+  <details open id="helpbox">
+    <summary>How to move</summary>
+    <ul class="help">
+      <li><b>Drag</b> to turn, <b>right-drag</b> (two fingers) to slide.</li>
+      <li><b>Scroll</b> or pinch zooms toward the pointer.</li>
+      <li><b>Double-click</b> a spot to fly there.</li>
+      <li><b>Walk</b> lets you go down streets and corridors.</li>
+    </ul>
+  </details>
+  <p class="note" id="note">Built from the game's own scene files (game build 0.30.2.1). Pins: signs, teleport pads, camps,
+    harvest nodes and other things placed in those files. NPCs and named mobs aren't in the files; they get pinned as you
+    play. Drag "Slice off the top" to see inside buildings and dungeons.</p>
+  </div>
+</section>
+
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+            "three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}
+</script>
+<script type="module">
+import * as THREE from 'three';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+import {PointerLockControls} from 'three/addons/controls/PointerLockControls.js';
+import {CSS2DRenderer, CSS2DObject} from 'three/addons/renderers/CSS2DRenderer.js';
+
+const STEM = "sungreetstrand", NAME = "Sungreet Strand";           // publish.py writes each zone's copy of this page
+const CAVE = false;                                       // publish.py: true for caves and dungeons (storey maps)
+const $ = (s) => document.querySelector(s);
+document.querySelector('.hud h1').textContent = NAME;
+document.getElementById('view').setAttribute('aria-label', `3D map of ${NAME}`);
+// the options panel folds away (on phones it starts folded so the map isn't covered)
+function setHud(open, remember) {
+  $('#hud').classList.toggle('collapsed', !open);
+  $('#hudtoggle').setAttribute('aria-expanded', String(open));
+  $('#hudtoggle').title = open ? 'Hide the options' : 'Show the options';
+  if (remember) try { localStorage.setItem('nh3d.hud', open ? 'open' : 'closed'); } catch (e) { /* storage off */ }
+}
+let hudPref = null;
+try { hudPref = localStorage.getItem('nh3d.hud'); } catch (e) { /* storage off */ }
+setHud(hudPref ? hudPref === 'open' : innerWidth > 600);
+$('#hudtoggle').addEventListener('click', () => setHud($('#hud').classList.contains('collapsed'), true));
+const css = (name) => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+THREE.ColorManagement.enabled = false;                    // the model's colours are plain sRGB: show them as they are
+const LAYERS = [['places', 'Places', '#f2c94c', true], ['crafting', 'Crafting', '#ff8c42', true], ['trainers', 'Trainers', '#6fb7ff', true],
+    ['merchants', 'Merchants', '#3fd0b0', true], ['teleporters', 'Teleporters', '#b98cff', true], ['zonelines', 'Zone lines', '#ff4fa3', true],
+    ['npcs', 'NPCs', '#ff9b5c', true], ['named', 'Named mobs', '#ff5c5c', true], ['herbs', 'Herbs', '#5fd38a', true], ['nodes', 'Nodes', '#9fd0ff', true],
+    ['camps', 'Camps', '#e0603a', true], ['traps', 'Traps', '#ff3b3b', true],
+    ['signposts', 'Signposts', '#d9d4c7', false], ['housing', 'Houses', '#c79a6b', false]];
+
+// no 3D graphics here (old phone, graphics turned off): say so before downloading the big model
+const gl = document.createElement('canvas');
+if (!(gl.getContext('webgl2') || gl.getContext('webgl'))) {
+  $('#loadtext').innerHTML = 'This browser can’t show 3D graphics (WebGL is off or missing). The flat map works everywhere: ' +
+    '<a href="../index.html#maps">open the flat map</a>.';
+  $('#load').style.pointerEvents = 'auto';
+  throw new Error('no WebGL');
+}
+// ---------- load: the website serves the gzipped model; a claude.ai artifact serves it as base64 text pieces
+const meta = await (await fetch(`${STEM}.web.json`)).json();
+const pinsP = fetch(`${STEM}.pins.json`).then((r) => (r.ok ? r.json() : [])).catch(() => []);
+const routesP = fetch(`${STEM}.routes.json`).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+let got = 0;
+const total = meta.parts_bytes || meta.bin_bytes || 0;
+// pieces are base64 text (what claude.ai serves); each decodes to a slice of one gzip stream
+const fromB64 = (s) => {
+  if (Uint8Array.fromBase64) return Uint8Array.fromBase64(s);
+  const bin = atob(s), out = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
+  return out;
+};
+async function download(f) {
+  const r = await fetch(f);
+  if (!r.ok) throw new Error(`${f}: ${r.status}`);
+  const reader = r.body.getReader(), chunks = [];
+  for (;;) {
+    const {done, value} = await reader.read();
+    if (done) break;
+    chunks.push(value); got += value.length;
+    $('#loadtext').textContent = `Loading the map… ${(got / 1e6).toFixed(1)}${total ? ` of ${(total / 1e6).toFixed(1)}` : ''} MB`;
+  }
+  return new Blob(chunks);
+}
+let gzBytes;
+if (meta.bin) gzBytes = new Uint8Array(await (await download(meta.bin)).arrayBuffer());
+else gzBytes = fromB64((await Promise.all(meta.parts_files.map(async (f) => (await download(f)).text()))).join(''));
+$('#loadtext').textContent = 'Unpacking…';
+const gzipped = gzBytes[0] === 0x1f && gzBytes[1] === 0x8b;      // a server may already have unzipped it
+const buf = gzipped ? await new Response(new Blob([gzBytes]).stream().pipeThrough(new DecompressionStream('gzip'))).arrayBuffer()
+                    : gzBytes.buffer.slice(gzBytes.byteOffset, gzBytes.byteOffset + gzBytes.byteLength);
+const n = meta.vertices;
+const hasK = Array.isArray(meta.classes);                         // a byte per vertex: what the surface is made of
+const pos = new Int16Array(buf, 0, n * 3);
+const col = new Uint8Array(buf, n * 6, n * 3);
+const kind = hasK ? new Uint8Array(buf, n * 9, n) : null;
+const idx = new Uint32Array(buf.slice(n * (hasK ? 10 : 9)));
+
+// ---------- scene
+const view = $('#view');
+const renderer = new THREE.WebGLRenderer({antialias: true, logarithmicDepthBuffer: true});
+renderer.outputColorSpace = THREE.LinearSRGBColorSpace;
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.setSize(innerWidth, innerHeight);
+view.appendChild(renderer.domElement);
+const labelsRenderer = new CSS2DRenderer();
+labelsRenderer.setSize(innerWidth, innerHeight);
+Object.assign(labelsRenderer.domElement.style, {position: 'fixed', inset: '0', pointerEvents: 'none'});
+view.appendChild(labelsRenderer.domElement);
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(55, innerWidth / innerHeight, 0.1, 9000);
+const hemi = new THREE.HemisphereLight(), sun = new THREE.DirectionalLight();
+sun.position.set(-0.7, 1.1, -0.7).multiplyScalar(1000);   // from the top left of the flat map, like it
+scene.add(hemi, sun);
+function applyTheme() {                                  // always a clear day, whatever the phone's light/dark mode
+  const sky = new THREE.Color('#a8c8e2');
+  scene.background = sky;
+  scene.fog = new THREE.Fog(sky, 1100, 4200);
+  hemi.color.set('#e4edf5'); hemi.groundColor.set('#8a7254'); hemi.intensity = 1.8;
+  sun.color.set('#fff2de'); sun.intensity = 1.9;
+}
+applyTheme();
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyTheme);
+new MutationObserver(applyTheme).observe(document.documentElement, {attributes: true, attributeFilter: ['data-theme']});
+
+const geo = new THREE.BufferGeometry();
+geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+geo.setAttribute('color', new THREE.BufferAttribute(col, 3, true));
+geo.setIndex(new THREE.BufferAttribute(idx, 1));
+if (hasK) geo.setAttribute('mclass', new THREE.BufferAttribute(kind, 1));
+geo.computeVertexNormals();
+geo.computeBoundingBox();
+// texture drawn on each surface by what it's made of: stone blocks, roof tiles, planks, sand grain, leaves, rock, ripples
+// (the flat map draws the same patterns: maps/look.py)
+const PATTERNS = `
+varying float vClass;
+varying vec3 vWorld;
+float nhHash(vec2 p) { p = fract(p * vec2(0.1031, 0.1030)); p += dot(p, p.yx + 33.33); return fract((p.x + p.y) * p.x); }
+float nhNoise(vec2 p) {
+  vec2 i = floor(p), f = fract(p); f = f * f * (3.0 - 2.0 * f);
+  return mix(mix(nhHash(i), nhHash(i + vec2(1.0, 0.0)), f.x), mix(nhHash(i + vec2(0.0, 1.0)), nhHash(i + vec2(1.0, 1.0)), f.x), f.y);
+}
+float nhPattern(float kf, vec3 w) {
+  int k = int(kf + 0.5);
+  vec3 an = abs(normalize(cross(dFdx(w), dFdy(w))));
+  bool up = an.y > 0.6;
+  vec2 p = up ? w.xz : (an.x > an.z ? vec2(w.z, w.y) : vec2(w.x, w.y));
+  float m = 1.0 + 0.06 * (nhNoise(p * 1.5) - 0.5);
+  if (k == 1) {
+    vec2 cell = up ? vec2(1.1, 1.1) : vec2(0.9, 0.45);
+    vec2 q = p / cell; q.x += 0.5 * mod(floor(q.y), 2.0);
+    vec2 f = fract(q);
+    float e = min(min(f.x, 1.0 - f.x) * cell.x, min(f.y, 1.0 - f.y) * cell.y);
+    m = (e < 0.04 ? 0.78 : 0.93 + 0.12 * nhHash(floor(q))) * (1.0 + 0.05 * (nhNoise(p * 2.0) - 0.5));
+  } else if (k == 3) {
+    float r = p.y / 0.32; float tu = p.x / 0.42 + 0.5 * mod(floor(r), 2.0);
+    m = (0.84 + 0.2 * fract(r)) * (fract(tu) < 0.07 ? 0.86 : 1.0) * (0.96 + 0.08 * nhHash(vec2(floor(tu), floor(r))));
+  } else if (k == 2) {
+    float pl = p.y / 0.24;
+    m = (fract(pl) < 0.08 ? 0.76 : 0.9 + 0.16 * nhHash(vec2(floor(pl), floor(p.x / 2.4)))) * (1.0 + 0.05 * sin(p.x * 9.0 + 6.28 * nhHash(vec2(floor(pl), 0.0))));
+  } else if (k == 5) {
+    m = 1.0 + 0.08 * (nhNoise(p * 0.3) - 0.5) + 0.06 * (nhNoise(p * 2.2) - 0.5) + 0.025 * sin((p.x * 0.8 + p.y * 0.5) * 2.5 + 3.0 * nhNoise(p * 0.08));
+  } else if (k == 9) {
+    m = 1.0 + 0.2 * (nhNoise(p * 0.5) - 0.5) + 0.1 * (nhNoise(p * 2.4) - 0.5);
+  } else if (k == 4) {
+    m = 0.86 + 0.28 * nhNoise(p * 1.7);
+  } else if (k == 6) {
+    m = 1.0 + 0.06 * (nhNoise(vec2(p.x * 0.25 + 0.3 * nhNoise(p * 0.05), p.y * 0.6)) - 0.5);
+  }
+  return m;
+}
+`;
+const plain = new THREE.MeshLambertMaterial({vertexColors: true, side: THREE.DoubleSide, flatShading: true});
+const textured = plain.clone();
+textured.onBeforeCompile = (sh) => {
+  sh.vertexShader = sh.vertexShader
+    .replace('#include <common>', '#include <common>\nattribute float mclass;\nvarying float vClass;\nvarying vec3 vWorld;')
+    .replace('#include <begin_vertex>', '#include <begin_vertex>\nvClass = mclass;\nvWorld = (modelMatrix * vec4(transformed, 1.0)).xyz;');
+  sh.fragmentShader = sh.fragmentShader
+    .replace('#include <common>', '#include <common>\n' + PATTERNS)
+    .replace('#include <color_fragment>', '#include <color_fragment>\ndiffuseColor.rgb *= nhPattern(vClass, vWorld);');
+};
+const town = new THREE.Mesh(geo, hasK ? textured : plain);
+// "See inside": draw each surface from its front only. Caves and rooms are built facing in, so their outer skin
+// (and any wall turned away from you) disappears and you look straight in, like a dollhouse.
+function seeInside(on) {
+  for (const m of [plain, textured]) { m.side = on ? THREE.FrontSide : THREE.DoubleSide; m.needsUpdate = true; }
+  $('#inside').setAttribute('aria-pressed', String(on));
+}
+$('#inside').addEventListener('click', () => seeInside($('#inside').getAttribute('aria-pressed') !== 'true'));
+seeInside(CAVE);
+renderer.debug.onShaderError = () => { console.warn('surface patterns unavailable here; plain colours'); town.material = plain; };
+renderer.localClippingEnabled = true;                     // "slice off the top": everything above the cut is hidden
+const slice = new THREE.Plane(new THREE.Vector3(0, -1, 0), 1e6);
+plain.clippingPlanes = [slice]; textured.clippingPlanes = [slice];
+town.scale.setScalar(meta.unit);
+scene.add(town);
+const box = geo.boundingBox.clone().applyMatrix4(town.matrixWorld.compose(town.position, town.quaternion, town.scale));
+const size = box.getSize(new THREE.Vector3()), mid = box.getCenter(new THREE.Vector3());
+$('#facts').innerHTML = `<span><b>${(size.x / 1000).toFixed(1)} × ${(size.z / 1000).toFixed(1)} km</b></span>` +
+  `<span><b>${(meta.triangles / 1e6).toFixed(1)}M</b> triangles</span>`;
+
+// district labels: the scene's own part names, at the middle of each part's buildings
+const labelObjs = [];
+for (const l of meta.labels) {
+  if (l.name === 'Geo') continue;
+  const el = document.createElement('div');
+  el.className = 'label'; el.textContent = l.name;
+  const o = new CSS2DObject(el);
+  o.position.set(l.at[0], l.at[1] + 30, l.at[2]);
+  scene.add(o); labelObjs.push(o);
+}
+
+// ---------- figures: simple shapes of our own (not the game's models) standing where pins are
+const M = (c, extra = {}) => new THREE.MeshLambertMaterial({color: c, flatShading: true, ...extra});
+const part = (geo, mat, x = 0, y = 0, z = 0) => { const m = new THREE.Mesh(geo, mat); m.position.set(x, y, z); return m; };
+const FIGS = {
+  humanoid(c) {
+    const g = new THREE.Group();
+    g.add(part(new THREE.ConeGeometry(0.42, 1.3, 8), M(c), 0, 0.65));                         // robe
+    g.add(part(new THREE.CapsuleGeometry(0.16, 0.42, 4, 8), M(c), 0, 1.25));                  // shoulders
+    g.add(part(new THREE.SphereGeometry(0.19, 12, 10), M('#e0b48c'), 0, 1.62));               // head
+    return g;
+  },
+  goblin() {
+    const g = FIGS.humanoid('#6b5532'); g.scale.setScalar(0.75);
+    g.children[2].material = M('#7fae4c');
+    for (const s of [-1, 1]) { const e = part(new THREE.ConeGeometry(0.06, 0.32, 6), M('#7fae4c'), s * 0.22, 1.66); e.rotation.z = -s * 1.2; g.add(e); }
+    return g;
+  },
+  skeleton() {
+    const g = new THREE.Group(), bone = M('#ece6d6');
+    g.add(part(new THREE.CapsuleGeometry(0.09, 0.55, 4, 6), bone, 0, 1.1));                     // spine
+    for (const s of [-1, 1]) {
+      g.add(part(new THREE.CapsuleGeometry(0.05, 0.75, 3, 6), bone, s * 0.13, 0.42));            // legs
+      const a = part(new THREE.CapsuleGeometry(0.045, 0.6, 3, 6), bone, s * 0.3, 1.1); a.rotation.z = s * 0.25; g.add(a);
+      g.add(part(new THREE.SphereGeometry(0.045, 6, 6), M('#111'), s * 0.07, 1.66, 0.15));       // eye holes
+    }
+    g.add(part(new THREE.SphereGeometry(0.17, 10, 8), bone, 0, 1.62));
+    return g;
+  },
+  ghost() {
+    const pts = [[0, 2.15], [0.3, 2.05], [0.44, 1.8], [0.47, 1.35], [0.5, 0.95], [0.6, 0.55], [0.5, 0.5]].map(([r, y]) => new THREE.Vector2(r, y));
+    const g = new THREE.Group();
+    g.add(part(new THREE.LatheGeometry(pts, 14), M('#d6e8ff', {transparent: true, opacity: 0.78, emissive: '#5b7dbf', emissiveIntensity: 0.35, side: THREE.DoubleSide})));
+    for (const s of [-1, 1]) g.add(part(new THREE.SphereGeometry(0.07, 8, 6), M('#101820'), s * 0.15, 1.8, 0.4));
+    g.userData.float = true;
+    return g;
+  },
+  bug() {
+    const g = new THREE.Group(), shell = M('#4b3a55');
+    const b = part(new THREE.SphereGeometry(0.5, 12, 8), shell, 0, 0.45); b.scale.set(1, 0.55, 1.4); g.add(b);
+    g.add(part(new THREE.SphereGeometry(0.22, 10, 8), M('#2e2433'), 0, 0.45, 0.75));
+    for (const s of [-1, 1]) for (const z of [-0.35, 0, 0.35]) { const l = part(new THREE.BoxGeometry(0.6, 0.05, 0.05), M('#241b28'), s * 0.55, 0.25, z); l.rotation.z = s * 0.5; g.add(l); }
+    return g;
+  },
+  animal() {
+    const g = new THREE.Group(), fur = M('#b08a5a');
+    g.add(part(new THREE.BoxGeometry(0.45, 0.42, 1.0), fur, 0, 0.7));
+    g.add(part(new THREE.BoxGeometry(0.3, 0.3, 0.4), fur, 0, 0.95, 0.6));
+    for (const x of [-0.15, 0.15]) for (const z of [-0.38, 0.38]) g.add(part(new THREE.BoxGeometry(0.1, 0.5, 0.1), fur, x, 0.25, z));
+    return g;
+  },
+  portal() {
+    const g = new THREE.Group();
+    g.add(part(new THREE.TorusGeometry(1.1, 0.11, 8, 32), M('#c77dff', {emissive: '#8a3ffc', emissiveIntensity: 0.6}), 0, 1.3));
+    g.add(part(new THREE.CircleGeometry(1.0, 32), M('#b88cff', {transparent: true, opacity: 0.35, side: THREE.DoubleSide, emissive: '#6a2fd0', emissiveIntensity: 0.5}), 0, 1.3));
+    g.userData.spin = true;
+    return g;
+  },
+  tent(c) {
+    const g = new THREE.Group();
+    const t = part(new THREE.ConeGeometry(1.3, 1.6, 4), M(c), 0, 0.8); t.rotation.y = Math.PI / 4; g.add(t);
+    g.add(part(new THREE.ConeGeometry(0.22, 0.45, 6), M('#ff8a2a', {emissive: '#ff5a00', emissiveIntensity: 0.7}), 1.6, 0.23, 0.6));
+    return g;
+  },
+  spikes() {
+    const g = new THREE.Group();
+    g.add(part(new THREE.BoxGeometry(1.4, 0.08, 1.4), M('#4a4440'), 0, 0.04));
+    for (const x of [-0.4, 0, 0.4]) for (const z of [-0.4, 0, 0.4]) g.add(part(new THREE.ConeGeometry(0.09, 0.45, 5), M('#b8b2a8'), x, 0.3, z));
+    return g;
+  },
+  crown() {
+    const g = new THREE.Group(), gold = M('#f2c14e', {emissive: '#a07000', emissiveIntensity: 0.4});
+    g.add(part(new THREE.TorusGeometry(0.22, 0.05, 6, 16), gold)); g.children[0].rotation.x = Math.PI / 2;
+    for (let i = 0; i < 5; i++) { const a = i / 5 * Math.PI * 2; g.add(part(new THREE.ConeGeometry(0.05, 0.16, 5), gold, Math.cos(a) * 0.22, 0.1, Math.sin(a) * 0.22)); }
+    g.userData.spin = true;
+    return g;
+  },
+};
+const ROBE = {trainers: '#4a78c8', merchants: '#2f9e85', npcs: '#d0773c', named: '#a8323a'};
+const TENT = [[/ashira/, '#a0522d'], [/bloody ?nose|goblin/, '#5b7f3a'], [/muggrah/, '#6e6a62']];
+function figureFor(p) {
+  const n = p.name.toLowerCase();
+  if (p.layer === 'zonelines') return FIGS.portal();
+  if (p.layer === 'camps') return FIGS.tent((TENT.find(([re]) => re.test(n)) || [0, '#b08b5a'])[1]);
+  if (p.layer === 'traps') return FIGS.spikes();
+  if (!ROBE[p.layer]) return null;
+  let g;
+  if (/ghost|spirit|wraith|shade|phantom|spectre|specter|haunt/.test(n)) g = FIGS.ghost();
+  else if (/skelet|bone/.test(n)) g = FIGS.skeleton();
+  else if (/goblin|bloody ?nose|muggrah/.test(n)) g = FIGS.goblin();
+  else if (/\bbug|beetle|scarab|spider|\bant\b/.test(n)) g = FIGS.bug();
+  else if (/jackal|wolf|\brat\b|\bcat\b|bear|lion|boar|hound/.test(n)) g = FIGS.animal();
+  else g = FIGS.humanoid(ROBE[p.layer]);
+  if (p.layer === 'named') { const c = FIGS.crown(); c.position.y = 2.35; g.add(c); }
+  return g;
+}
+const figures = [];
+let figuresOn = true;
+
+// pins: one small label per sign, pad, herb... in layers that can be switched on and off
+const pins = await pinsP, pinObjs = [];
+const shown = Object.fromEntries(LAYERS.map(([id, , , on]) => [id, on]));
+for (const p of pins) {
+  const L = LAYERS.find((l) => l[0] === p.layer);
+  if (!L) continue;
+  const el = document.createElement('div');
+  el.className = p.unconfirmed ? 'pin maybe' : 'pin'; el.style.setProperty('--c', L[2]);
+  el.innerHTML = `<i></i><span></span>`;
+  el.querySelector('span').textContent = p.name + (p.unconfirmed ? ' (to confirm)' : '');
+  el.title = `${L[1].replace(/s$/, '')}: ${p.name}` + (p.note ? ` · ${p.note}` : '') + (p.credit ? ` · ${p.credit}` : '');
+  const o = new CSS2DObject(el);
+  o.position.set(p.at[0], p.at[1] + 1.5, p.at[2]);
+  o.userData = p; o.visible = shown[p.layer];
+  el.addEventListener('click', () => { flyTo(o.position, 45); showRoute(p); });
+  scene.add(o); pinObjs.push(o);
+  try {
+    const fig = figureFor(p);
+    if (fig) {
+      const ground = p.at[1] - (p.unconfirmed ? 1.5 : 0);
+      fig.position.set(p.at[0], ground + (fig.userData.float ? 0.4 : 0), p.at[2]);
+      fig.userData.baseY = fig.position.y;
+      if (p.unconfirmed) fig.traverse((m) => { if (m.material) { m.material = m.material.clone(); m.material.transparent = true; m.material.opacity = Math.min(m.material.opacity, 0.55); } });
+      fig.visible = o.visible && figuresOn;
+      o.userData.fig = fig; scene.add(fig); figures.push(fig);
+      o.position.y = Math.max(o.position.y, ground + 2.9);                 // label above the figure's head
+    }
+  } catch (err) { console.warn('figure skipped', err); }
+}
+const used = new Set(pins.map((p) => p.layer));
+$('#layers').innerHTML = LAYERS.filter(([id]) => used.has(id)).map(([id, label, c, on]) =>
+  `<button type="button" data-layer="${id}" aria-pressed="${on}" style="--c:${c}"><i></i>${label} <span>${pins.filter((p) => p.layer === id).length}</span></button>`).join('');
+$('#layers').addEventListener('click', (e) => {
+  const b = e.target.closest('button[data-layer]');
+  if (!b) return;
+  const on = b.getAttribute('aria-pressed') !== 'true';
+  b.setAttribute('aria-pressed', String(on)); shown[b.dataset.layer] = on;
+  pinObjs.forEach((o) => { if (o.userData.layer === b.dataset.layer) { o.visible = on; if (o.userData.fig) o.userData.fig.visible = on && figuresOn; } });
+});
+$('#figs').addEventListener('click', (e) => {
+  figuresOn = e.currentTarget.getAttribute('aria-pressed') !== 'true';
+  e.currentTarget.setAttribute('aria-pressed', String(figuresOn));
+  pinObjs.forEach((o) => { if (o.userData.fig) o.userData.fig.visible = o.visible && figuresOn; });
+});
+$('#pinnames').innerHTML = [...new Set(pins.filter((p) => p.layer !== 'signposts').map((p) => p.name))].sort()
+  .map((n) => `<option value="${n.replace(/"/g, '&quot;')}">`).join('');
+function findPin() {
+  const q = $('#find').value.trim().toLowerCase();
+  if (!q) return;
+  const o = pinObjs.find((x) => x.userData.name.toLowerCase() === q) || pinObjs.find((x) => x.userData.name.toLowerCase().includes(q));
+  if (!o) return;
+  if (!o.visible) { shown[o.userData.layer] = true; pinObjs.forEach((x) => { if (x.userData.layer === o.userData.layer) x.visible = true; });
+    const b = document.querySelector(`[data-layer="${o.userData.layer}"]`); if (b) b.setAttribute('aria-pressed', 'true'); }
+  flyTo(o.position, 45);
+}
+$('#find').addEventListener('change', findPin);
+$('#find').addEventListener('keydown', (e) => { if (e.key === 'Enter') findPin(); });
+
+// the walk from the zone-in to a tapped pin, as a glowing line along the game's own walkable paths
+const routes = await routesP;
+let routeMesh = null;
+function showRoute(p) {
+  if (routeMesh) { scene.remove(routeMesh); routeMesh.traverse((o) => o.geometry && o.geometry.dispose()); routeMesh = null; }
+  const i = pins.indexOf(p);                                // several pins share a name: routes keyed by pin number
+  const r = routes && (routes.routes['#' + i] || routes.routes[p.name]);
+  if (!r || r.length < 2) return;
+  const runs = [[]];                                        // a null in the route: a lift or teleporter, no line
+  for (const q of r) { if (q) runs[runs.length - 1].push(new THREE.Vector3(q[0], q[1] + 0.4, q[2])); else runs.push([]); }
+  const mat = new THREE.MeshBasicMaterial({color: '#5ff0ff', transparent: true, opacity: 0.85, depthTest: false});
+  routeMesh = new THREE.Group();
+  for (const pts of runs.filter((x) => x.length > 1)) {
+    const curve = new THREE.CatmullRomCurve3(pts, false, 'centripetal', 0.2);
+    const tube = new THREE.Mesh(new THREE.TubeGeometry(curve, Math.max(32, pts.length * 12), 0.28, 6, false), mat);
+    tube.renderOrder = 999; routeMesh.add(tube);
+  }
+  scene.add(routeMesh);
+}
+
+// ---------- moving around
+const orbit = new OrbitControls(camera, renderer.domElement);
+orbit.enableDamping = true; orbit.zoomToCursor = true; orbit.screenSpacePanning = false;
+orbit.maxPolarAngle = Math.PI * 0.495; orbit.minDistance = 1.5; orbit.maxDistance = 4000;
+function tilted() {
+  orbit.target.set(mid.x, box.min.y + size.y * 0.15, mid.z);
+  camera.position.set(mid.x - size.x * 0.25, box.min.y + Math.max(size.x, size.z) * 0.55, mid.z + size.z * 0.75);
+  orbit.update();
+}
+function topView() {
+  orbit.target.set(mid.x, box.min.y, mid.z);
+  camera.position.set(mid.x, box.min.y + Math.max(size.x, size.z) * 1.05, mid.z + 0.01);
+  orbit.update();
+}
+tilted();
+$('#cut').addEventListener('input', (e) => {
+  const v = +e.target.value;
+  slice.constant = v >= 1000 ? 1e6 : box.min.y + (box.max.y - box.min.y) * v / 1000;
+});
+$('#top').onclick = topView;
+$('#tilt').onclick = tilted;
+$('#labels').onclick = (e) => {
+  const on = e.currentTarget.getAttribute('aria-pressed') !== 'true';
+  e.currentTarget.setAttribute('aria-pressed', String(on));
+  labelObjs.forEach((o) => { o.visible = on; });
+};
+
+// double-click: fly to the spot under the pointer
+const ray = new THREE.Raycaster(), ndc = new THREE.Vector2();
+let flight = null;
+function flyTo(point, dist) {
+  if (walk.isLocked) walk.unlock();
+  const dir = camera.position.clone().sub(orbit.target);
+  if (dir.y < dir.length() * 0.35) dir.y = dir.length() * 0.6;      // look down at it a little
+  flight = {t: 0, fromT: orbit.target.clone(), toT: point.clone(), fromC: camera.position.clone(),
+            toC: point.clone().add(dir.normalize().multiplyScalar(dist))};
+}
+renderer.domElement.addEventListener('dblclick', (e) => {
+  if (walk.isLocked) return;
+  ndc.set((e.clientX / innerWidth) * 2 - 1, -(e.clientY / innerHeight) * 2 + 1);
+  ray.setFromCamera(ndc, camera);
+  const hit = ray.intersectObject(town, false)[0];
+  if (!hit) return;
+  const dir = camera.position.clone().sub(orbit.target);
+  const dist = Math.max(12, Math.min(dir.length() * 0.35, 120));
+  flight = {t: 0, fromT: orbit.target.clone(), toT: hit.point.clone(), fromC: camera.position.clone(),
+            toC: hit.point.clone().add(dir.normalize().multiplyScalar(dist))};
+});
+
+// walking: pointer lock + WASD
+const walk = new PointerLockControls(camera, document.body);
+const keys = new Set();
+$('#walk').onclick = () => { try { walk.lock(); } catch (err) { /* not available here */ } };
+walk.addEventListener('lock', () => {
+  orbit.enabled = false; $('#walk').setAttribute('aria-pressed', 'true'); $('#walkhint').hidden = false; $('#cross').hidden = false;
+  if (camera.position.y - box.min.y > 120) {                     // drop down near the streets to walk
+    camera.position.set(orbit.target.x, orbit.target.y + 6, orbit.target.z + 30);
+    camera.lookAt(orbit.target);
+  }
+});
+walk.addEventListener('unlock', () => {
+  orbit.enabled = true; $('#walk').setAttribute('aria-pressed', 'false'); $('#walkhint').hidden = true; $('#cross').hidden = true;
+  const ahead = new THREE.Vector3(); camera.getWorldDirection(ahead);
+  orbit.target.copy(camera.position).add(ahead.multiplyScalar(20)); orbit.update();
+});
+addEventListener('keydown', (e) => { if (walk.isLocked) { keys.add(e.code); if (e.code === 'Space') e.preventDefault(); } });
+addEventListener('keyup', (e) => keys.delete(e.code));
+
+addEventListener('resize', () => {
+  camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight); labelsRenderer.setSize(innerWidth, innerHeight);
+});
+
+const clock = new THREE.Clock();
+let frame = 0;
+renderer.setAnimationLoop(() => {
+  if (frame === 0) document.getElementById('load')?.remove();  // the first frame drawn: never leave "Unpacking..." up
+  const dt = Math.min(clock.getDelta(), 0.1);
+  if (walk.isLocked) {
+    const speed = (keys.has('ShiftLeft') || keys.has('ShiftRight') ? 45 : 12) * dt;
+    if (keys.has('KeyW') || keys.has('ArrowUp')) walk.moveForward(speed);
+    if (keys.has('KeyS') || keys.has('ArrowDown')) walk.moveForward(-speed);
+    if (keys.has('KeyD') || keys.has('ArrowRight')) walk.moveRight(speed);
+    if (keys.has('KeyA') || keys.has('ArrowLeft')) walk.moveRight(-speed);
+    if (keys.has('Space')) camera.position.y += speed;
+    if (keys.has('KeyC') || keys.has('ControlLeft')) camera.position.y -= speed;
+  } else {
+    if (flight) {
+      flight.t = Math.min(1, flight.t + dt / 0.9);
+      const k = flight.t * flight.t * (3 - 2 * flight.t);
+      orbit.target.lerpVectors(flight.fromT, flight.toT, k);
+      camera.position.lerpVectors(flight.fromC, flight.toC, k);
+      if (flight.t >= 1) flight = null;
+    }
+    orbit.update();
+  }
+  const now = clock.elapsedTime;
+  for (const f of figures) {
+    if (!f.visible) continue;
+    if (f.userData.float) f.position.y = f.userData.baseY + Math.sin(now * 1.6 + f.position.x) * 0.15;
+    f.traverse((m) => { if (m.userData && m.userData.spin) m.rotation.y = now * 0.8; });
+    if (f.userData.spin) f.rotation.y = now * 0.8;
+  }
+  if ((frame++ & 7) === 0) {
+    for (const o of pinObjs) {
+      if (!o.visible) continue;
+      const far = o.position.distanceTo(camera.position) > (['places', 'teleporters', 'crafting', 'trainers', 'merchants', 'zonelines'].includes(o.userData.layer) ? 420 : 160);
+      o.element.classList.toggle('far', far);
+    }
+  }
+  renderer.render(scene, camera);
+  labelsRenderer.render(scene, camera);
+});
+$('#load')?.remove();                                      // loaded: the box goes (not just hidden)
+</script>
