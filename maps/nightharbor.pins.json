@@ -1,0 +1,3564 @@
+[
+ {
+  "layer": "places",
+  "name": "Customs House",
+  "at": [
+   -474.3,
+   41.2,
+   152.0
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Steel Talons Garrison",
+  "at": [
+   -164.2,
+   52.6,
+   -332.6
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Steel Talons Naval Yard",
+  "at": [
+   -169.2,
+   39.2,
+   -207.8
+  ]
+ },
+ {
+  "layer": "signposts",
+  "name": "Necropolis · Spellbinders Spire · Northern Gate · Academy",
+  "at": [
+   178.8,
+   77.8,
+   319.0
+  ]
+ },
+ {
+  "layer": "signposts",
+  "name": "Night Market · Stables · Saltbreeze Park",
+  "at": [
+   -165.0,
+   55.9,
+   -31.7
+  ]
+ },
+ {
+  "layer": "signposts",
+  "name": "Night Market · Twilight Harbor · Western Gate · Shaded Bloom Inn",
+  "at": [
+   -35.7,
+   54.7,
+   -299.6
+  ]
+ },
+ {
+  "layer": "signposts",
+  "name": "Necropolis · Western Gate · Sageside · Shaded Bloom Inn · Twilight Harbor",
+  "at": [
+   -48.9,
+   55.6,
+   -54.7
+  ]
+ },
+ {
+  "layer": "signposts",
+  "name": "Night Market · Shaded Bloom Inn · Twilight Harbor",
+  "at": [
+   -207.3,
+   43.2,
+   -69.1
+  ]
+ },
+ {
+  "layer": "signposts",
+  "name": "Saltbreeze Park · Twilight Harbor · Sageside",
+  "at": [
+   -243.5,
+   48.7,
+   312.9
+  ]
+ },
+ {
+  "layer": "signposts",
+  "name": "Twilight Harbor · Western Gate · Necropolis · Night Market",
+  "at": [
+   -34.1,
+   54.0,
+   64.4
+  ]
+ },
+ {
+  "layer": "signposts",
+  "name": "Garrison · Sageside · Necropolis · Night Market",
+  "at": [
+   52.8,
+   55.9,
+   -82.3
+  ]
+ },
+ {
+  "layer": "signposts",
+  "name": "Night Market · Sageside · Necropolis · Caravan Gate",
+  "at": [
+   54.2,
+   54.2,
+   -216.7
+  ]
+ },
+ {
+  "layer": "signposts",
+  "name": "Night Market · Garrison · Western Gate",
+  "at": [
+   -138.3,
+   55.2,
+   -230.3
+  ]
+ },
+ {
+  "layer": "signposts",
+  "name": "Sageside · Necropolis · Saltbreeze Park",
+  "at": [
+   -38.4,
+   55.5,
+   -126.8
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Night Harbor Western Gate",
+  "at": [
+   -21.2,
+   49.4,
+   -318.4
+  ]
+ },
+ {
+  "layer": "signposts",
+  "name": "Garrison · Sageside · Necropolis · Blackfeather Bazaar · Night Market",
+  "at": [
+   60.1,
+   58.3,
+   30.2
+  ]
+ },
+ {
+  "layer": "signposts",
+  "name": "Necropolis · Saltbreeze Park · Spellbinders Spire",
+  "at": [
+   154.6,
+   80.8,
+   189.3
+  ]
+ },
+ {
+  "layer": "signposts",
+  "name": "To Spellbinders of the Spire",
+  "at": [
+   193.6,
+   97.4,
+   477.6
+  ]
+ },
+ {
+  "layer": "signposts",
+  "name": "Night Market · Wayfarers Hospice · Western Gate · Caravan Gate",
+  "at": [
+   56.5,
+   53.9,
+   -291.0
+  ]
+ },
+ {
+  "layer": "signposts",
+  "name": "↑ Night Market → The Garrison →",
+  "at": [
+   -31.0,
+   45.4,
+   -265.2
+  ]
+ },
+ {
+  "layer": "signposts",
+  "name": "To Chartered Academy of Arcane Inquiry",
+  "at": [
+   193.5,
+   100.9,
+   491.8
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Steel Talons Garrison",
+  "at": [
+   -230.2,
+   49.3,
+   -303.0
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Night Harbor Northern Gate",
+  "at": [
+   221.6,
+   76.5,
+   350.5
+  ]
+ },
+ {
+  "layer": "signposts",
+  "name": "The Garrison →",
+  "at": [
+   -124.0,
+   45.6,
+   -211.8
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Night Harbor Caravan Gate",
+  "at": [
+   84.6,
+   49.4,
+   -318.4
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Library",
+  "at": [
+   132.9,
+   99.4,
+   509.9
+  ]
+ },
+ {
+  "layer": "signposts",
+  "name": "To The Library",
+  "at": [
+   170.8,
+   97.4,
+   500.2
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "The Night Market",
+  "at": [
+   -121.2,
+   48.8,
+   -197.3
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "The Night Market",
+  "at": [
+   -48.2,
+   45.6,
+   -210.6
+  ]
+ },
+ {
+  "layer": "signposts",
+  "name": "Twilight Harbor ↑",
+  "at": [
+   -135.3,
+   45.2,
+   -80.2
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Quartermaster's Office",
+  "at": [
+   -175.4,
+   54.2,
+   -328.4
+  ]
+ },
+ {
+  "layer": "signposts",
+  "name": "The City Illuminator's Guild →",
+  "at": [
+   -201.3,
+   46.7,
+   -204.0
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Glimmermoon Hall",
+  "at": [
+   -90.7,
+   46.2,
+   -259.9
+  ]
+ },
+ {
+  "layer": "signposts",
+  "name": "The Black Feather Bazaar →",
+  "at": [
+   251.1,
+   38.6,
+   141.8
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Inspection Post",
+  "at": [
+   85.7,
+   51.6,
+   -305.2
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Concourse of Souls",
+  "at": [
+   298.7,
+   45.9,
+   49.9
+  ]
+ },
+ {
+  "layer": "signposts",
+  "name": "The Necropolis ↑",
+  "at": [
+   41.4,
+   46.4,
+   41.7
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Temple of Vespyra",
+  "at": [
+   224.7,
+   94.6,
+   446.8
+  ]
+ },
+ {
+  "layer": "signposts",
+  "name": "Sagesyde ↑  ← The Necropolis",
+  "at": [
+   102.7,
+   50.4,
+   50.9
+  ]
+ },
+ {
+  "layer": "signposts",
+  "name": "Twilight Harbor →  ← Sagesyde ← The Necropolis",
+  "at": [
+   -32.1,
+   46.2,
+   -52.2
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Steel Talons Martial Academy",
+  "at": [
+   -256.8,
+   43.2,
+   -380.0
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Temple of Tilustra",
+  "at": [
+   224.7,
+   94.6,
+   481.6
+  ]
+ },
+ {
+  "layer": "signposts",
+  "name": "The Black Feather Bazaar ↑",
+  "at": [
+   393.6,
+   53.2,
+   92.1
+  ]
+ },
+ {
+  "layer": "signposts",
+  "name": "↑ Night Market ↑ The Garrison",
+  "at": [
+   39.3,
+   45.4,
+   -84.0
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Hall of Hallowed Bones",
+  "at": [
+   315.2,
+   41.3,
+   -75.0
+  ]
+ },
+ {
+  "layer": "signposts",
+  "name": "← Sagesyde ← The Necropolis Saltbreeze Park ↑",
+  "at": [
+   -9.1,
+   45.4,
+   -127.1
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Thirsty Glance",
+  "at": [
+   -74.3,
+   48.2,
+   -260.7
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Alchemy Supplies",
+  "at": [
+   315.7,
+   50.5,
+   209.5
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Granary",
+  "at": [
+   123.8,
+   78.2,
+   281.1
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "The Changing of the Guard",
+  "at": [
+   117.7,
+   76.7,
+   109.8
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Wincog",
+  "at": [
+   77.5,
+   73.4,
+   110.2
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Temple of Eltindra",
+  "at": [
+   185.1,
+   59.9,
+   -289.1
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Saltbreeze Park",
+  "at": [
+   -40.4,
+   60.4,
+   -28.3
+  ]
+ },
+ {
+  "layer": "crafting",
+  "name": "Shaded Bloom Inn",
+  "at": [
+   32.4,
+   59.7,
+   -271.6
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Night Market",
+  "at": [
+   -122.7,
+   51.8,
+   -74.1
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Concourse of Souls",
+  "at": [
+   381.5,
+   56.1,
+   31.1
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Night Market",
+  "at": [
+   -50.1,
+   61.9,
+   -94.9
+  ]
+ },
+ {
+  "layer": "crafting",
+  "name": "Tannery",
+  "at": [
+   72.5,
+   56.8,
+   -187.1
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Night Market",
+  "at": [
+   -48.4,
+   58.3,
+   -231.6
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Bath House",
+  "at": [
+   -87.3,
+   61.6,
+   -281.2
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Bank",
+  "at": [
+   45.1,
+   59.6,
+   -249.4
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "The Spirit Tap",
+  "at": [
+   386.9,
+   80.1,
+   161.7
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Saltbreeze Park",
+  "at": [
+   51.7,
+   55.9,
+   59.1
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Wayfarers Hospice",
+  "at": [
+   93.6,
+   59.3,
+   -356.1
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Twilight Harbor",
+  "at": [
+   -156.4,
+   58.2,
+   -80.1
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Night Market",
+  "at": [
+   -137.3,
+   58.0,
+   -197.1
+  ]
+ },
+ {
+  "layer": "places",
+  "name": "Bank",
+  "at": [
+   123.7,
+   87.7,
+   265.4
+  ]
+ },
+ {
+  "layer": "crafting",
+  "name": "Tannery area",
+  "at": [
+   141.9,
+   54.4,
+   -170.6
+  ]
+ },
+ {
+  "layer": "crafting",
+  "name": "Blacksmith area (Night Market)",
+  "at": [
+   -112.3,
+   56.4,
+   -171.6
+  ]
+ },
+ {
+  "layer": "herbs",
+  "name": "Ghost Poppy",
+  "at": [
+   -186.6,
+   62.3,
+   -19.3
+  ]
+ },
+ {
+  "layer": "herbs",
+  "name": "Dewdrop",
+  "at": [
+   -183.7,
+   62.5,
+   -21.7
+  ]
+ },
+ {
+  "layer": "herbs",
+  "name": "Phoenix Flower",
+  "at": [
+   -182.0,
+   56.8,
+   -16.9
+  ]
+ },
+ {
+  "layer": "herbs",
+  "name": "Moonveil",
+  "at": [
+   -183.3,
+   56.8,
+   -20.9
+  ]
+ },
+ {
+  "layer": "herbs",
+  "name": "Magebloom",
+  "at": [
+   -185.0,
+   61.9,
+   -19.7
+  ]
+ },
+ {
+  "layer": "herbs",
+  "name": "Stranglevine",
+  "at": [
+   -94.2,
+   55.7,
+   146.6
+  ]
+ },
+ {
+  "layer": "herbs",
+  "name": "Lion Leaf",
+  "at": [
+   86.5,
+   58.3,
+   -333.8
+  ]
+ },
+ {
+  "layer": "herbs",
+  "name": "Ghost Poppy",
+  "at": [
+   86.4,
+   58.2,
+   -338.4
+  ]
+ },
+ {
+  "layer": "herbs",
+  "name": "Phoenix Flower",
+  "at": [
+   -106.6,
+   55.7,
+   137.5
+  ]
+ },
+ {
+  "layer": "herbs",
+  "name": "Moonveil",
+  "at": [
+   -100.3,
+   55.7,
+   114.7
+  ]
+ },
+ {
+  "layer": "herbs",
+  "name": "Magebloom",
+  "at": [
+   -120.0,
+   55.7,
+   112.4
+  ]
+ },
+ {
+  "layer": "teleporters",
+  "name": "Teleporter",
+  "at": [
+   27.5,
+   60.2,
+   392.4
+  ]
+ },
+ {
+  "layer": "teleporters",
+  "name": "Teleporter",
+  "at": [
+   128.9,
+   106.2,
+   482.4
+  ]
+ },
+ {
+  "layer": "teleporters",
+  "name": "Tower teleporters: Spellbinders Spire, Library",
+  "at": [
+   182.2,
+   162.2,
+   478.3
+  ]
+ },
+ {
+  "layer": "teleporters",
+  "name": "Tower teleporters: Highborn Terrace, Spellbinders Spire, Library",
+  "at": [
+   182.2,
+   122.1,
+   488.9
+  ],
+  "note": "4 floors"
+ },
+ {
+  "layer": "teleporters",
+  "name": "Sageside Teleporter",
+  "at": [
+   -190.6,
+   55.2,
+   327.9
+  ]
+ },
+ {
+  "layer": "teleporters",
+  "name": "Tower teleporters: Highborn Terrace, Library, Spellbinders Spire",
+  "at": [
+   182.2,
+   133.7,
+   500.8
+  ],
+  "note": "2 floors"
+ },
+ {
+  "layer": "teleporters",
+  "name": "Tower teleporters: Spellbinders Spire, Highborn Terrace",
+  "at": [
+   198.5,
+   114.5,
+   488.9
+  ],
+  "note": "2 floors"
+ },
+ {
+  "layer": "teleporters",
+  "name": "Teleporter",
+  "at": [
+   244.0,
+   99.3,
+   579.5
+  ]
+ },
+ {
+  "layer": "teleporters",
+  "name": "Tower teleporters: Library, Highborn Terrace",
+  "at": [
+   168.4,
+   104.2,
+   488.9
+  ]
+ },
+ {
+  "layer": "teleporters",
+  "name": "The Docks Teleporter",
+  "at": [
+   109.9,
+   85.2,
+   327.9
+  ]
+ },
+ {
+  "layer": "teleporters",
+  "name": "Teleporter",
+  "at": [
+   178.7,
+   106.7,
+   530.1
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 1",
+  "at": [
+   -35.5,
+   57.0,
+   -206.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 2",
+  "at": [
+   -22.7,
+   61.6,
+   -206.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 3",
+  "at": [
+   -27.0,
+   57.3,
+   -193.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 4",
+  "at": [
+   -29.2,
+   59.1,
+   -185.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 5",
+  "at": [
+   -4.6,
+   55.4,
+   -212.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 6",
+  "at": [
+   -8.8,
+   59.9,
+   -212.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 7",
+  "at": [
+   4.2,
+   56.6,
+   -211.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 8",
+  "at": [
+   -23.1,
+   59.3,
+   -163.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 9",
+  "at": [
+   -54.4,
+   57.7,
+   -218.5
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 11",
+  "at": [
+   -54.3,
+   57.7,
+   -235.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 40",
+  "at": [
+   -9.6,
+   56.9,
+   -196.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 41",
+  "at": [
+   -11.4,
+   57.6,
+   -176.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 42",
+  "at": [
+   -1.9,
+   62.0,
+   -184.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 43",
+  "at": [
+   2.9,
+   57.6,
+   -178.1
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 44",
+  "at": [
+   1.9,
+   64.6,
+   -206.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 45",
+  "at": [
+   18.2,
+   61.9,
+   -188.1
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 46",
+  "at": [
+   28.6,
+   61.9,
+   -193.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 47",
+  "at": [
+   38.9,
+   61.9,
+   -170.7
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 48",
+  "at": [
+   24.9,
+   61.9,
+   -173.7
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 49",
+  "at": [
+   22.3,
+   67.1,
+   -166.5
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 50",
+  "at": [
+   33.8,
+   57.1,
+   -156.3
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 51",
+  "at": [
+   20.8,
+   57.3,
+   -155.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 52",
+  "at": [
+   49.9,
+   57.5,
+   -164.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 53",
+  "at": [
+   31.4,
+   58.1,
+   -125.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 54",
+  "at": [
+   43.8,
+   56.8,
+   -137.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 55",
+  "at": [
+   65.2,
+   60.3,
+   -132.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 56",
+  "at": [
+   55.6,
+   67.6,
+   -134.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 57",
+  "at": [
+   82.2,
+   62.8,
+   -133.1
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 58",
+  "at": [
+   94.6,
+   64.8,
+   -135.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 59",
+  "at": [
+   118.7,
+   64.6,
+   -134.8
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 60",
+  "at": [
+   129.6,
+   64.8,
+   -133.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 61",
+  "at": [
+   95.2,
+   62.8,
+   -110.1
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 62",
+  "at": [
+   77.1,
+   63.1,
+   -117.1
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 63",
+  "at": [
+   58.7,
+   61.6,
+   -112.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 64",
+  "at": [
+   59.2,
+   62.8,
+   -93.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 65",
+  "at": [
+   52.9,
+   68.8,
+   -98.1
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 66",
+  "at": [
+   47.2,
+   66.8,
+   -110.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 67",
+  "at": [
+   49.4,
+   63.8,
+   -125.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 68",
+  "at": [
+   41.1,
+   61.6,
+   -110.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 70",
+  "at": [
+   32.9,
+   57.3,
+   -108.1
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 71",
+  "at": [
+   20.5,
+   57.6,
+   -100.1
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 72",
+  "at": [
+   17.0,
+   58.6,
+   -81.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 73",
+  "at": [
+   11.0,
+   57.6,
+   -114.7
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 74",
+  "at": [
+   8.3,
+   57.8,
+   -96.5
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 75",
+  "at": [
+   -9.3,
+   57.6,
+   -118.1
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 76",
+  "at": [
+   -26.5,
+   60.1,
+   -118.2
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 77",
+  "at": [
+   -33.9,
+   59.0,
+   -91.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 78",
+  "at": [
+   -35.1,
+   57.8,
+   -80.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 79",
+  "at": [
+   -21.1,
+   58.3,
+   -76.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 80",
+  "at": [
+   -26.6,
+   63.6,
+   -82.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 81",
+  "at": [
+   -15.6,
+   64.1,
+   -81.1
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 82",
+  "at": [
+   -11.6,
+   59.6,
+   -79.3
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 83",
+  "at": [
+   -19.3,
+   58.1,
+   -56.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 84",
+  "at": [
+   -15.3,
+   63.1,
+   -59.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 85",
+  "at": [
+   9.2,
+   58.3,
+   -60.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 86",
+  "at": [
+   37.2,
+   58.9,
+   -57.8
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 87",
+  "at": [
+   46.6,
+   57.8,
+   -88.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 88",
+  "at": [
+   77.0,
+   58.5,
+   -93.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 89",
+  "at": [
+   81.9,
+   65.0,
+   -86.3
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 90",
+  "at": [
+   81.9,
+   65.1,
+   -91.1
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 91",
+  "at": [
+   100.9,
+   60.3,
+   -88.2
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 92",
+  "at": [
+   113.2,
+   60.3,
+   -92.8
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 93",
+  "at": [
+   102.9,
+   62.8,
+   -102.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 94",
+  "at": [
+   105.7,
+   62.8,
+   -111.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 95",
+  "at": [
+   105.7,
+   67.5,
+   -118.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 96",
+  "at": [
+   125.4,
+   64.8,
+   -113.1
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 97",
+  "at": [
+   138.6,
+   64.8,
+   -118.5
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 98",
+  "at": [
+   39.9,
+   56.8,
+   -211.2
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 99",
+  "at": [
+   29.2,
+   56.8,
+   -213.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 100",
+  "at": [
+   49.2,
+   56.8,
+   -198.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 101",
+  "at": [
+   51.4,
+   56.8,
+   -191.1
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 102",
+  "at": [
+   39.3,
+   56.6,
+   -117.0
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 103",
+  "at": [
+   82.2,
+   60.2,
+   -56.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 104",
+  "at": [
+   100.0,
+   64.3,
+   -55.2
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 105",
+  "at": [
+   94.0,
+   60.2,
+   -65.3
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 106",
+  "at": [
+   -81.8,
+   57.6,
+   -87.8
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 107",
+  "at": [
+   -56.7,
+   58.6,
+   -112.3
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 108",
+  "at": [
+   -68.6,
+   57.2,
+   -180.0
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 109",
+  "at": [
+   -60.2,
+   57.3,
+   -208.7
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 110",
+  "at": [
+   -92.8,
+   55.5,
+   -207.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 111",
+  "at": [
+   -105.2,
+   59.3,
+   -198.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 112",
+  "at": [
+   -96.8,
+   58.4,
+   -212.2
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 113",
+  "at": [
+   -83.6,
+   57.3,
+   -226.1
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 114",
+  "at": [
+   -115.7,
+   57.7,
+   -240.8
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 115",
+  "at": [
+   -118.1,
+   57.6,
+   -229.7
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 116",
+  "at": [
+   -171.3,
+   57.2,
+   -242.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 117",
+  "at": [
+   -146.3,
+   57.2,
+   -240.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 118",
+  "at": [
+   -141.6,
+   57.8,
+   -185.1
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 119",
+  "at": [
+   -120.2,
+   57.9,
+   -201.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 120",
+  "at": [
+   -102.2,
+   58.7,
+   -154.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 121",
+  "at": [
+   -56.0,
+   58.0,
+   -98.8
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 122",
+  "at": [
+   -48.9,
+   57.9,
+   -89.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 123",
+  "at": [
+   44.8,
+   56.6,
+   -235.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 124",
+  "at": [
+   77.3,
+   56.2,
+   -235.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 125",
+  "at": [
+   77.7,
+   56.3,
+   -214.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 126",
+  "at": [
+   43.8,
+   56.4,
+   -309.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 127",
+  "at": [
+   80.8,
+   55.8,
+   -153.5
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 128",
+  "at": [
+   -155.4,
+   57.8,
+   -183.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 129",
+  "at": [
+   -164.3,
+   57.8,
+   -174.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 130",
+  "at": [
+   -177.1,
+   57.8,
+   -187.1
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 131",
+  "at": [
+   -175.1,
+   57.8,
+   -174.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 132",
+  "at": [
+   -191.9,
+   62.6,
+   -193.3
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 133",
+  "at": [
+   -188.6,
+   57.8,
+   -178.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 134",
+  "at": [
+   -184.6,
+   57.8,
+   -162.1
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 135",
+  "at": [
+   -190.6,
+   57.8,
+   -155.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 136",
+  "at": [
+   -182.1,
+   57.6,
+   -153.1
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 137",
+  "at": [
+   -169.2,
+   57.1,
+   -137.1
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 138",
+  "at": [
+   -191.1,
+   57.8,
+   -127.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 139",
+  "at": [
+   -195.4,
+   60.7,
+   -136.0
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 140",
+  "at": [
+   -166.2,
+   60.3,
+   -133.1
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 141",
+  "at": [
+   -156.8,
+   57.6,
+   -117.3
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 142",
+  "at": [
+   -167.1,
+   63.3,
+   -172.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 143",
+  "at": [
+   -173.6,
+   62.6,
+   -167.1
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 144",
+  "at": [
+   -186.1,
+   56.4,
+   -190.8
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 145",
+  "at": [
+   -194.4,
+   63.6,
+   -171.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 146",
+  "at": [
+   -191.6,
+   63.6,
+   -168.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 147",
+  "at": [
+   -198.3,
+   62.6,
+   -165.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 148",
+  "at": [
+   -167.8,
+   57.6,
+   -155.1
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 149",
+  "at": [
+   -153.6,
+   62.5,
+   -154.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 150",
+  "at": [
+   -113.4,
+   57.5,
+   -101.3
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 151",
+  "at": [
+   -117.3,
+   57.4,
+   -88.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 152",
+  "at": [
+   52.7,
+   65.7,
+   113.2
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 153",
+  "at": [
+   61.7,
+   65.7,
+   113.2
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 154",
+  "at": [
+   66.2,
+   64.5,
+   113.3
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 155",
+  "at": [
+   18.3,
+   59.1,
+   -140.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 200",
+  "at": [
+   192.8,
+   82.6,
+   362.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 201",
+  "at": [
+   194.6,
+   84.1,
+   393.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 202",
+  "at": [
+   203.8,
+   88.6,
+   394.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 203",
+  "at": [
+   202.7,
+   88.7,
+   400.7
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 204",
+  "at": [
+   189.9,
+   85.8,
+   406.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 205",
+  "at": [
+   197.7,
+   87.8,
+   420.7
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 206",
+  "at": [
+   194.7,
+   90.3,
+   428.3
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 207",
+  "at": [
+   192.4,
+   90.3,
+   431.8
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 208",
+  "at": [
+   171.7,
+   90.5,
+   403.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 209",
+  "at": [
+   170.6,
+   95.0,
+   424.7
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 210",
+  "at": [
+   169.1,
+   94.8,
+   443.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 211",
+  "at": [
+   163.6,
+   99.5,
+   441.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 212",
+  "at": [
+   160.6,
+   95.8,
+   456.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 213",
+  "at": [
+   142.6,
+   97.5,
+   456.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 214",
+  "at": [
+   146.8,
+   104.1,
+   578.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 215",
+  "at": [
+   97.3,
+   105.9,
+   564.0
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 216",
+  "at": [
+   59.4,
+   110.1,
+   556.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 217",
+  "at": [
+   49.3,
+   110.3,
+   521.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 218",
+  "at": [
+   69.3,
+   110.4,
+   525.1
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 219",
+  "at": [
+   86.1,
+   111.3,
+   500.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 220",
+  "at": [
+   84.5,
+   115.3,
+   472.5
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 221",
+  "at": [
+   150.6,
+   85.6,
+   439.5
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 222",
+  "at": [
+   135.9,
+   82.5,
+   437.1
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 223",
+  "at": [
+   173.1,
+   81.3,
+   419.0
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 224",
+  "at": [
+   173.1,
+   81.3,
+   430.5
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 225",
+  "at": [
+   113.4,
+   82.8,
+   153.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 226",
+  "at": [
+   113.4,
+   82.8,
+   139.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 227",
+  "at": [
+   113.4,
+   82.8,
+   125.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 228",
+  "at": [
+   102.4,
+   72.0,
+   97.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 229",
+  "at": [
+   97.9,
+   74.3,
+   107.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 230",
+  "at": [
+   90.7,
+   72.5,
+   111.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 231",
+  "at": [
+   197.4,
+   82.8,
+   169.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 232",
+  "at": [
+   197.4,
+   82.8,
+   183.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 233",
+  "at": [
+   197.4,
+   82.8,
+   197.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 234",
+  "at": [
+   151.5,
+   83.2,
+   118.5
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 235",
+  "at": [
+   154.3,
+   83.2,
+   125.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 236",
+  "at": [
+   154.3,
+   83.2,
+   141.8
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 237",
+  "at": [
+   162.8,
+   83.2,
+   152.5
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 238",
+  "at": [
+   128.6,
+   81.3,
+   311.7
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 239",
+  "at": [
+   128.6,
+   81.3,
+   344.0
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 240",
+  "at": [
+   158.7,
+   81.0,
+   437.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 241",
+  "at": [
+   63.7,
+   63.0,
+   80.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 242",
+  "at": [
+   131.6,
+   81.1,
+   419.0
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 243",
+  "at": [
+   126.1,
+   81.1,
+   419.0
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 244",
+  "at": [
+   120.1,
+   81.1,
+   419.0
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 245",
+  "at": [
+   108.2,
+   81.1,
+   419.0
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 246",
+  "at": [
+   102.1,
+   81.1,
+   419.0
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 247",
+  "at": [
+   96.1,
+   81.1,
+   419.0
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 248",
+  "at": [
+   91.1,
+   81.1,
+   419.0
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 249",
+  "at": [
+   89.4,
+   81.1,
+   416.8
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 250",
+  "at": [
+   89.4,
+   81.1,
+   411.8
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 251",
+  "at": [
+   89.4,
+   81.1,
+   405.8
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 252",
+  "at": [
+   89.4,
+   81.1,
+   399.8
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 253",
+  "at": [
+   89.4,
+   81.1,
+   393.8
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 254",
+  "at": [
+   89.4,
+   81.1,
+   387.8
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 255",
+  "at": [
+   131.7,
+   86.1,
+   419.0
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 256",
+  "at": [
+   126.1,
+   86.1,
+   419.0
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 257",
+  "at": [
+   120.1,
+   86.1,
+   419.0
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 258",
+  "at": [
+   114.1,
+   86.1,
+   419.0
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 259",
+  "at": [
+   108.1,
+   86.1,
+   419.0
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 260",
+  "at": [
+   102.1,
+   86.1,
+   419.0
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 261",
+  "at": [
+   96.1,
+   86.1,
+   419.0
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 262",
+  "at": [
+   91.1,
+   86.1,
+   419.0
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 263",
+  "at": [
+   89.4,
+   86.1,
+   416.8
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 264",
+  "at": [
+   89.4,
+   86.1,
+   411.8
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 265",
+  "at": [
+   89.4,
+   86.1,
+   405.8
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 266",
+  "at": [
+   89.4,
+   86.1,
+   399.8
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 267",
+  "at": [
+   89.4,
+   86.1,
+   393.8
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 268",
+  "at": [
+   89.4,
+   86.1,
+   387.8
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 269",
+  "at": [
+   188.4,
+   106.0,
+   539.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 270",
+  "at": [
+   168.9,
+   106.0,
+   539.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 271",
+  "at": [
+   -196.5,
+   44.9,
+   -77.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 272",
+  "at": [
+   -214.6,
+   48.4,
+   -118.5
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 273",
+  "at": [
+   -236.9,
+   46.6,
+   -48.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 274",
+  "at": [
+   -241.9,
+   39.9,
+   -57.7
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 275",
+  "at": [
+   -243.1,
+   40.7,
+   -25.7
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 276",
+  "at": [
+   -246.7,
+   40.3,
+   -16.5
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 277",
+  "at": [
+   -197.9,
+   51.5,
+   -49.5
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 278",
+  "at": [
+   -216.7,
+   46.6,
+   -22.3
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 279",
+  "at": [
+   -228.0,
+   44.9,
+   7.0
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 280",
+  "at": [
+   -240.4,
+   42.6,
+   37.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 281",
+  "at": [
+   -241.7,
+   45.0,
+   58.1
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 282",
+  "at": [
+   -264.9,
+   47.1,
+   51.2
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 283",
+  "at": [
+   -155.7,
+   56.5,
+   17.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 284",
+  "at": [
+   -141.6,
+   61.1,
+   14.7
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 285",
+  "at": [
+   -176.0,
+   61.0,
+   24.3
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 286",
+  "at": [
+   -217.8,
+   59.9,
+   36.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 287",
+  "at": [
+   -224.9,
+   56.4,
+   54.3
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 288",
+  "at": [
+   -256.7,
+   43.0,
+   103.5
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 289",
+  "at": [
+   -261.7,
+   44.9,
+   134.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 290",
+  "at": [
+   -284.3,
+   45.4,
+   125.5
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 291",
+  "at": [
+   -311.7,
+   43.3,
+   124.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 292",
+  "at": [
+   -333.3,
+   43.4,
+   119.2
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 293",
+  "at": [
+   -288.2,
+   43.3,
+   96.3
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 294",
+  "at": [
+   -230.6,
+   50.5,
+   145.9
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 295",
+  "at": [
+   -221.5,
+   55.6,
+   141.0
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 296",
+  "at": [
+   -224.7,
+   55.6,
+   128.7
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 297",
+  "at": [
+   -303.5,
+   49.2,
+   55.5
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 298",
+  "at": [
+   -301.3,
+   46.6,
+   174.7
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 299",
+  "at": [
+   -298.8,
+   48.6,
+   193.2
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 300",
+  "at": [
+   -310.4,
+   49.0,
+   194.3
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 301",
+  "at": [
+   -320.6,
+   52.5,
+   243.5
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 302",
+  "at": [
+   -336.3,
+   54.9,
+   270.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 303",
+  "at": [
+   -296.8,
+   52.8,
+   230.7
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 304",
+  "at": [
+   -289.3,
+   52.8,
+   230.2
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 305",
+  "at": [
+   -318.7,
+   48.8,
+   266.5
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 306",
+  "at": [
+   -325.3,
+   53.4,
+   276.8
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 307",
+  "at": [
+   -308.2,
+   48.6,
+   241.2
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 308",
+  "at": [
+   -255.5,
+   43.4,
+   151.1
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "House 309",
+  "at": [
+   -315.1,
+   50.1,
+   324.0
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "Shaded Bloom Inn, room 1",
+  "at": [
+   16.7,
+   56.1,
+   -252.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "Shaded Bloom Inn, room 2",
+  "at": [
+   11.2,
+   56.1,
+   -252.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "Shaded Bloom Inn, room 3",
+  "at": [
+   5.2,
+   56.0,
+   -252.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "Shaded Bloom Inn, room 4",
+  "at": [
+   -0.8,
+   56.1,
+   -252.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "Shaded Bloom Inn, room 5",
+  "at": [
+   -6.9,
+   56.1,
+   -252.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "Shaded Bloom Inn, room 6",
+  "at": [
+   -12.8,
+   56.1,
+   -252.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "Shaded Bloom Inn, room 7",
+  "at": [
+   -18.6,
+   56.7,
+   -248.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "Shaded Bloom Inn, room 8",
+  "at": [
+   -27.7,
+   56.7,
+   -248.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "Shaded Bloom Inn, room 9",
+  "at": [
+   -25.5,
+   56.1,
+   -254.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "Shaded Bloom Inn, room 10",
+  "at": [
+   -29.8,
+   56.7,
+   -259.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "Shaded Bloom Inn, room 11",
+  "at": [
+   -29.8,
+   56.7,
+   -265.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "Shaded Bloom Inn, room 12",
+  "at": [
+   -29.8,
+   56.7,
+   -271.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "Shaded Bloom Inn, room 13",
+  "at": [
+   -29.8,
+   56.7,
+   -277.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "Shaded Bloom Inn, room 14",
+  "at": [
+   -25.5,
+   56.1,
+   -283.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "Shaded Bloom Inn, room 15",
+  "at": [
+   16.7,
+   61.1,
+   -252.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "Shaded Bloom Inn, room 16",
+  "at": [
+   11.2,
+   61.1,
+   -252.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "Shaded Bloom Inn, room 17",
+  "at": [
+   5.2,
+   61.7,
+   -248.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "Shaded Bloom Inn, room 18",
+  "at": [
+   -0.8,
+   61.1,
+   -252.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "Shaded Bloom Inn, room 19",
+  "at": [
+   -6.9,
+   61.1,
+   -252.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "Shaded Bloom Inn, room 20",
+  "at": [
+   -12.8,
+   61.1,
+   -252.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "Shaded Bloom Inn, room 21",
+  "at": [
+   -18.8,
+   61.1,
+   -252.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "Shaded Bloom Inn, room 22",
+  "at": [
+   -23.8,
+   61.1,
+   -252.4
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "Shaded Bloom Inn, room 23",
+  "at": [
+   -25.5,
+   61.1,
+   -254.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "Shaded Bloom Inn, room 24",
+  "at": [
+   -25.5,
+   61.1,
+   -259.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "Shaded Bloom Inn, room 25",
+  "at": [
+   -25.5,
+   61.1,
+   -265.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "Shaded Bloom Inn, room 26",
+  "at": [
+   -25.5,
+   61.1,
+   -271.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "Shaded Bloom Inn, room 27",
+  "at": [
+   -25.5,
+   61.1,
+   -277.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "Shaded Bloom Inn, room 28",
+  "at": [
+   -25.5,
+   61.1,
+   -283.6
+  ]
+ },
+ {
+  "layer": "housing",
+  "name": "Stall 10",
+  "at": [
+   -54.3,
+   57.7,
+   -231.3
+  ]
+ },
+ {
+  "layer": "zonelines",
+  "name": "To Sungreet Strand",
+  "at": [
+   494.5,
+   88.7,
+   302.2
+  ],
+  "unconfirmed": true,
+  "credit": "From Maggot's map",
+  "source": "Maggot's Night Harbor map on the community wiki"
+ },
+ {
+  "layer": "zonelines",
+  "name": "To Wyrmsbane Tomb",
+  "at": [
+   178.6,
+   72.6,
+   -508.8
+  ],
+  "unconfirmed": true,
+  "credit": "From Maggot's map",
+  "source": "Maggot's Night Harbor map on the community wiki"
+ },
+ {
+  "layer": "zonelines",
+  "name": "To Shaded Dunes",
+  "at": [
+   -74.8,
+   72.1,
+   -587.4
+  ],
+  "unconfirmed": true,
+  "credit": "From Maggot's map",
+  "source": "Maggot's Night Harbor map on the community wiki"
+ },
+ {
+  "layer": "zonelines",
+  "name": "To the Sewers",
+  "at": [
+   -162.1,
+   136.7,
+   236.0
+  ],
+  "unconfirmed": true,
+  "credit": "From Maggot's map",
+  "source": "Maggot's Night Harbor map on the community wiki"
+ },
+ {
+  "layer": "zonelines",
+  "name": "Boat to Keeper's Bight",
+  "at": [
+   -367.1,
+   44.3,
+   279.5
+  ],
+  "unconfirmed": true,
+  "credit": "From Maggot's map",
+  "source": "Maggot's Night Harbor map on the community wiki"
+ },
+ {
+  "layer": "trainers",
+  "name": "Trainers: Enchanter, Inquisitor, Spellblade",
+  "at": [
+   210.0,
+   108.0,
+   549.3
+  ],
+  "unconfirmed": true,
+  "credit": "From Maggot's map",
+  "source": "Maggot's Night Harbor map on the community wiki"
+ },
+ {
+  "layer": "trainers",
+  "name": "Trainers: Archer, Fighter, Ranger",
+  "at": [
+   -171.1,
+   78.8,
+   -318.9
+  ],
+  "unconfirmed": true,
+  "credit": "From Maggot's map",
+  "source": "Maggot's Night Harbor map on the community wiki"
+ },
+ {
+  "layer": "trainers",
+  "name": "Trainers: Necromancer, Shadow Knight",
+  "at": [
+   278.6,
+   52.7,
+   72.8
+  ],
+  "unconfirmed": true,
+  "credit": "From Maggot's map",
+  "source": "Maggot's Night Harbor map on the community wiki"
+ },
+ {
+  "layer": "trainers",
+  "name": "Trainers: Cleric, Paladin",
+  "at": [
+   82.6,
+   84.6,
+   -381.2
+  ],
+  "unconfirmed": true,
+  "credit": "From Maggot's map",
+  "source": "Maggot's Night Harbor map on the community wiki"
+ },
+ {
+  "layer": "trainers",
+  "name": "Trainers: Beastmaster, Shaman",
+  "at": [
+   52.9,
+   96.4,
+   179.5
+  ],
+  "unconfirmed": true,
+  "credit": "From Maggot's map",
+  "source": "Maggot's Night Harbor map on the community wiki"
+ },
+ {
+  "layer": "trainers",
+  "name": "Trainers: Elementalist, Monk",
+  "at": [
+   -146.9,
+   108.3,
+   150.8
+  ],
+  "unconfirmed": true,
+  "credit": "From Maggot's map",
+  "source": "Maggot's Night Harbor map on the community wiki"
+ },
+ {
+  "layer": "trainers",
+  "name": "Trainers: Bard",
+  "at": [
+   -68.9,
+   70.7,
+   -209.7
+  ],
+  "unconfirmed": true,
+  "credit": "From Maggot's map",
+  "source": "Maggot's Night Harbor map on the community wiki"
+ },
+ {
+  "layer": "trainers",
+  "name": "Trainers: Druid",
+  "at": [
+   -40.3,
+   133.7,
+   216.5
+  ],
+  "unconfirmed": true,
+  "credit": "From Maggot's map",
+  "source": "Maggot's Night Harbor map on the community wiki"
+ },
+ {
+  "layer": "trainers",
+  "name": "Trainers: Wizard",
+  "at": [
+   161.8,
+   126.3,
+   482.9
+  ],
+  "unconfirmed": true,
+  "credit": "From Maggot's map",
+  "source": "Maggot's Night Harbor map on the community wiki"
+ },
+ {
+  "layer": "trainers",
+  "name": "Trainers: Rogue",
+  "at": [
+   -147.6,
+   61.9,
+   -125.2
+  ],
+  "unconfirmed": true,
+  "credit": "From Maggot's map",
+  "source": "Maggot's Night Harbor map on the community wiki"
+ },
+ {
+  "layer": "places",
+  "name": "Grave Digger Camp",
+  "at": [
+   495.1,
+   153.1,
+   146.7
+  ],
+  "unconfirmed": true,
+  "credit": "From Maggot's map",
+  "source": "Maggot's Night Harbor map on the community wiki"
+ },
+ {
+  "layer": "places",
+  "name": "Temple to Matswar",
+  "at": [
+   300.1,
+   134.2,
+   -27.4
+  ],
+  "unconfirmed": true,
+  "credit": "From Maggot's map",
+  "source": "Maggot's Night Harbor map on the community wiki"
+ },
+ {
+  "layer": "places",
+  "name": "The Arena",
+  "at": [
+   232.1,
+   132.7,
+   -101.3
+  ],
+  "unconfirmed": true,
+  "credit": "From Maggot's map",
+  "source": "Maggot's Night Harbor map on the community wiki"
+ },
+ {
+  "layer": "places",
+  "name": "Sojourner's Camp",
+  "at": [
+   130.1,
+   59.7,
+   -297.4
+  ],
+  "unconfirmed": true,
+  "credit": "From Maggot's map",
+  "source": "Maggot's Night Harbor map on the community wiki"
+ },
+ {
+  "layer": "places",
+  "name": "Night Harbor Crypt",
+  "at": [
+   162.8,
+   90.7,
+   29.9
+  ],
+  "unconfirmed": true,
+  "credit": "From Maggot's map",
+  "source": "Maggot's Night Harbor map on the community wiki"
+ },
+ {
+  "layer": "places",
+  "name": "Palace",
+  "at": [
+   44.2,
+   108.3,
+   340.9
+  ],
+  "unconfirmed": true,
+  "credit": "From Maggot's map",
+  "source": "Maggot's Night Harbor map on the community wiki"
+ },
+ {
+  "layer": "places",
+  "name": "Temple to Relle",
+  "at": [
+   -128.0,
+   57.4,
+   -233.2
+  ],
+  "unconfirmed": true,
+  "credit": "From Maggot's map",
+  "source": "Maggot's Night Harbor map on the community wiki"
+ },
+ {
+  "layer": "places",
+  "name": "Shrine to Porbor",
+  "at": [
+   -107.3,
+   67.2,
+   -84.8
+  ],
+  "unconfirmed": true,
+  "credit": "From Maggot's map",
+  "source": "Maggot's Night Harbor map on the community wiki"
+ },
+ {
+  "layer": "places",
+  "name": "Little Half Town",
+  "at": [
+   -114.4,
+   54.9,
+   79.1
+  ],
+  "unconfirmed": true,
+  "credit": "From Maggot's map",
+  "source": "Maggot's Night Harbor map on the community wiki"
+ },
+ {
+  "layer": "places",
+  "name": "Temple to Haradrel",
+  "at": [
+   -253.1,
+   86.4,
+   -305.2
+  ],
+  "unconfirmed": true,
+  "credit": "From Maggot's map",
+  "source": "Maggot's Night Harbor map on the community wiki"
+ },
+ {
+  "layer": "places",
+  "name": "Temple to Yuum",
+  "at": [
+   -253.3,
+   62.5,
+   378.7
+  ],
+  "unconfirmed": true,
+  "credit": "From Maggot's map",
+  "source": "Maggot's Night Harbor map on the community wiki"
+ },
+ {
+  "layer": "merchants",
+  "name": "Night Market vendors",
+  "at": [
+   -58.8,
+   72.4,
+   -99.8
+  ],
+  "unconfirmed": true,
+  "credit": "From Maggot's map",
+  "source": "Maggot's Night Harbor map on the community wiki",
+  "note": "Bags; Cloth, Chain & Plate Armor; Used Weapons; Grocer & Butcher; Cobbler; Herbs & Spices; General Goods"
+ },
+ {
+  "layer": "merchants",
+  "name": "Blackfeather Bazaar vendors",
+  "at": [
+   331.3,
+   160.9,
+   174.1
+  ],
+  "unconfirmed": true,
+  "credit": "From Maggot's map",
+  "source": "Maggot's Night Harbor map on the community wiki",
+  "note": "Food/Animal Parts; Used Armor; Weaponsmith; Used Weapons; Butcher & Cook; Pelt Trader"
+ },
+ {
+  "layer": "merchants",
+  "name": "Little Half Town vendors",
+  "at": [
+   -114.4,
+   54.9,
+   79.1
+  ],
+  "unconfirmed": true,
+  "credit": "From Maggot's map",
+  "source": "Maggot's Night Harbor map on the community wiki",
+  "note": "Bags; Cloth, Chain, Leather & Plate Armor; Reagents; Cobbler; General Goods"
+ },
+ {
+  "layer": "merchants",
+  "name": "Sageside vendors",
+  "at": [
+   163.5,
+   79.5,
+   311.5
+  ],
+  "unconfirmed": true,
+  "credit": "From Maggot's map",
+  "source": "Maggot's Night Harbor map on the community wiki",
+  "note": "Used Armor; Used Weapons; Food; General Goods; Bags; Leather Worker"
+ }
+]

@@ -1,0 +1,213 @@
+[
+ {
+  "layer": "traps",
+  "name": "Spike Trap Ramp Top",
+  "at": [
+   -58.9,
+   32.4,
+   -47.5
+  ]
+ },
+ {
+  "layer": "traps",
+  "name": "Spike Trap Ramp Bottom",
+  "at": [
+   -42.8,
+   10.3,
+   -38.4
+  ]
+ },
+ {
+  "layer": "named",
+  "name": "Bone Construct",
+  "at": [
+   104.1,
+   3.9,
+   -47.7
+  ],
+  "unconfirmed": true,
+  "credit": "From Walabus's map",
+  "source": "Walabus's Wyrmsbane Tomb map on the community wiki"
+ },
+ {
+  "layer": "named",
+  "name": "Lt. Gregan",
+  "at": [
+   88.6,
+   2.9,
+   6.2
+  ],
+  "unconfirmed": true,
+  "credit": "From Walabus's map",
+  "source": "Walabus's Wyrmsbane Tomb map on the community wiki",
+  "note": "drops plate"
+ },
+ {
+  "layer": "named",
+  "name": "Timmon",
+  "at": [
+   2.7,
+   6.9,
+   -87.0
+  ],
+  "unconfirmed": true,
+  "credit": "From Walabus's map",
+  "source": "Walabus's Wyrmsbane Tomb map on the community wiki",
+  "note": "drops cloth"
+ },
+ {
+  "layer": "named",
+  "name": "Jakob",
+  "at": [
+   9.6,
+   2.9,
+   31.3
+  ],
+  "unconfirmed": true,
+  "credit": "From Walabus's map",
+  "source": "Walabus's Wyrmsbane Tomb map on the community wiki",
+  "note": "drops cloth"
+ },
+ {
+  "layer": "named",
+  "name": "Quartermaster Boothroy",
+  "at": [
+   -18.8,
+   29.1,
+   -30.1
+  ],
+  "unconfirmed": true,
+  "credit": "From Walabus's map",
+  "source": "Walabus's Wyrmsbane Tomb map on the community wiki"
+ },
+ {
+  "layer": "named",
+  "name": "Grandmaster Gildas",
+  "at": [
+   131.1,
+   -13.1,
+   -13.3
+  ],
+  "unconfirmed": true,
+  "credit": "From Walabus's map",
+  "source": "Walabus's Wyrmsbane Tomb map on the community wiki",
+  "note": "drops leather"
+ },
+ {
+  "layer": "named",
+  "name": "Grandmaster Obadiah",
+  "at": [
+   45.9,
+   -13.1,
+   -13.3
+  ],
+  "unconfirmed": true,
+  "credit": "From Walabus's map",
+  "source": "Walabus's Wyrmsbane Tomb map on the community wiki",
+  "note": "drops leather"
+ },
+ {
+  "layer": "named",
+  "name": "High Marshal Fionna",
+  "at": [
+   88.5,
+   -8.4,
+   -70.8
+  ],
+  "unconfirmed": true,
+  "credit": "From Walabus's map",
+  "source": "Walabus's Wyrmsbane Tomb map on the community wiki",
+  "note": "drops plate"
+ },
+ {
+  "layer": "named",
+  "name": "Dario",
+  "at": [
+   43.7,
+   20.9,
+   -26.7
+  ],
+  "unconfirmed": true,
+  "credit": "From Walabus's map",
+  "source": "Walabus's Wyrmsbane Tomb map on the community wiki",
+  "note": "drops chain"
+ },
+ {
+  "layer": "named",
+  "name": "Ariblast",
+  "at": [
+   18.0,
+   23.9,
+   -0.1
+  ],
+  "unconfirmed": true,
+  "credit": "From Walabus's map",
+  "source": "Walabus's Wyrmsbane Tomb map on the community wiki"
+ },
+ {
+  "layer": "named",
+  "name": "Gerhardt Graves",
+  "at": [
+   1.3,
+   31.9,
+   -63.3
+  ],
+  "unconfirmed": true,
+  "credit": "From Walabus's map",
+  "source": "Walabus's Wyrmsbane Tomb map on the community wiki",
+  "note": "drops chain"
+ },
+ {
+  "layer": "zonelines",
+  "name": "Zone in from Night Harbor",
+  "at": [
+   -77.1,
+   27.4,
+   -49.8
+  ],
+  "note": "Start of the torch-lit way in, before the plank bridge"
+ },
+ {
+  "layer": "places",
+  "name": "Chapel loft: pipe organ and Broken Lute",
+  "at": [
+   39.7,
+   22.5,
+   -66.8
+  ],
+  "note": "The Yowling: with your back to Timmon Bell's spawn in the chapel below, /look at the organ, then /take lute in the cobweb corner ahead and to the right. Velana got the lute here 2026-10-06. Spot from the game's own 'ChurchLoft' lights."
+ },
+ {
+  "layer": "places",
+  "name": "Hidden passage (pink lights)",
+  "at": [
+   19.2,
+   27.5,
+   -54.5
+  ],
+  "note": "On the hidden way to the chapel loft (The Yowling). Lit by the game's own pink 'SecretPath' lights; our map leaves the passage black."
+ },
+ {
+  "layer": "places",
+  "name": "Hidden passage (pink lights)",
+  "at": [
+   13.8,
+   31.8,
+   -82.7
+  ],
+  "note": "Hidden way along the top of the chapel loft. Lit by the game's own pink 'SecretPath' lights; our map leaves the passage black."
+ },
+ {
+  "layer": "zonelines",
+  "name": "Way to the Ancient Crypt",
+  "at": [
+   -28.3,
+   27.5,
+   -66.3
+  ],
+  "unconfirmed": true,
+  "credit": "From MnM Atlas",
+  "source": "MnM Atlas Wyrmsbane Tomb map (approximate exit)",
+  "note": "Approximate, confirm in game. NOT the hidden way to the organ for The Yowling."
+ }
+]
